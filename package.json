@@ -1,0 +1,20 @@
+{
+  "name": "unobfuscatejs",
+  "version": "1.0",
+  "description": "jQuery plugin for defuscating obfuscated email addressess.",
+  "main": "src/jquery.unobfuscate.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atk14/UnobfuscateJs.git"
+  },
+  "keywords": [],
+  "author": "Bohdan Ganický <bohdan.ganicky@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/atk14/UnobfuscateJs/issues"
+  },
+  "homepage": "https://github.com/atk14/UnobfuscateJs#readme",
+  "dependencies": {
+    "jquery": ">=1.12"
+  }
+}
