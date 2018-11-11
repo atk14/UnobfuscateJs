@@ -1,6 +1,6 @@
 {
   "name": "unobfuscatejs",
-  "version": "1.0",
+  "version": "1.0.0",
   "description": "jQuery plugin for defuscating obfuscated email addressess.",
   "main": "src/jquery.unobfuscate.js",
   "repository": {
