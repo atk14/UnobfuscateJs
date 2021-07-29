@@ -39,6 +39,8 @@
 		return that.each(function() {
 			var $this = $(this);
 			var address = gimmeMail($this.text(), opts.atstring, opts.dotstring);
+			var text = $this.data('text') || address;
+			var attrs = $this.data('attrs') || {};
 
 			// modify the text first
 			$this.text(address);
@@ -48,7 +50,10 @@
 			}
 			// if not -> create a link
 			else {
-				$this.html('<a href="mailto:' + address + '">' + address + '</a>');
+				var link = $('<a>',{href: 'mailto:' + address});
+				link.text(text);
+				link.attr(attrs);
+				$this.html(link);
 			}
 			// prevent future defuscation (for later calls on newly added elements)
 			$this.addClass('unobfuscated');
